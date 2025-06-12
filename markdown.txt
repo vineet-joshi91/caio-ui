@@ -1,0 +1,21 @@
+CAIO_2.0/
+│
+├── app/                    # Streamlit or Flask frontend
+├── brains/                # CXO brain logic (CFO, CHRO, etc.)
+├── core_ai/
+│   ├── classifier/        # BERT-based doc classifier
+│   ├── summarizer/        # Mistral/GPT generation layer
+│   ├── translator/        # SarvamAI / BLOOM-based multilingual wrapper
+│   ├── extractor/         # Entity/sentiment extraction
+│   └── fallback/          # ONNX/TinyML fallback brains
+│
+├── data/
+│   ├── inputs/
+│   ├── outputs/
+│   └── memory/            # Personalized memory store (vector DB, JSON, or SQLite)
+│
+├── inter_caio/            # Future: CAIO-to-CAIO protocol engine
+├── utils/                 # PDF parser, preprocessor, language detector, etc.
+├── config.py              # API keys, model paths, flags
+├── main.py                # Entry point
+└── requirements.txt
